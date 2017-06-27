@@ -3,10 +3,10 @@ var bodyParser = require('body-parser')
 
 var app = express()
 
+// Body parser to be able to read the json in th request
 app.use(bodyParser.json())
 
-// See the README about ordering of middleware
-// Load the routes ("controllers" -ish)
+// Load the routes 
 app.use(require('./site/router'))
 app.use('/api', require('./customers/router'))
 // Repeat the above line for additional model areas

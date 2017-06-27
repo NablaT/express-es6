@@ -4,7 +4,7 @@
   "description": "Scaffolding explaining a method for organizing files in an express.js web application project",
   "scripts": {
     "test": "./bin/test.sh",
-    "start": "./app/server.js | bistre",
+    "start": "node ./app/server.js",
     "lint": "standard"
   },
   "main": "./app/server",
@@ -12,9 +12,10 @@
     "node": "6"
   },
   "dependencies": {
+    "body-parser": "1.17.2",
     "bole": "3.0.2",
     "express": "4.15.2",
-    "body-parser": "1.17.2"
+    "node-fetch": "^1.7.1"
   },
   "devDependencies": {
     "bistre": "1.0.1",
